@@ -1,0 +1,21 @@
+.slick-dots li button:before {
+    color: #0C6697;
+  }
+  .lazy-load-image-background{
+    display: block !important;
+  }
+  .slick-dots li.slick-active button:before {
+    color: #0C6697;
+  }
+  
+  /* .slick-slide > div {
+    margin: 0 8px;
+  } */
+  @media only screen
+  and (min-width: 600px)
+  and (max-width: 900px)
+{
+    .hodego-hero-image {
+        width: 45% !important;
+    }
+  }

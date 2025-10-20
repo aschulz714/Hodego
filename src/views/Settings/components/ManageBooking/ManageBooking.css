@@ -1,0 +1,24 @@
+.upcomingCard, .upcomingCardPagination, .pendingCard,.pendingCardPagination,.historyCard,.historyCardPagination{
+    width: 80%;
+}
+#reschedule-dialog-title .MuiFormLabel-root{
+    z-index: 1111;
+}
+@media (max-width: 767px) {
+.upcomingCard, .upcomingCardPagination,.pendingCard,.pendingCardPagination,.historyCard,.historyCardPagination{
+    width: 100% !important;
+    margin-left:0px !important;
+}
+#simple-tabpanel-0 > div:first-child{
+    padding:24px 0px 0px 0px;
+}
+#simple-tabpanel-1 > div:first-child{
+    padding:24px 0px 0px 0px;
+}
+#simple-tabpanel-2 > div:first-child{
+    padding:24px 0px 0px 0px;
+}
+.bookingReschedule .MuiDialog-paperScrollPaper, .bookingCancelDialog .MuiDialog-paperScrollPaper{
+    margin:10px;
+}
+}

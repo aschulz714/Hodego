@@ -1,0 +1,300 @@
+.MuiTabs-flexContainer{
+  align-items: flex-start;
+} 
+/* .tabsDesktop{
+padding:0px !important;
+min-height: auto !important;
+} */
+#accountSettingsSection{
+width:90%;
+padding: 20px;
+position: relative;
+margin-left: 9%;
+/* overflow-y: auto; */
+}
+.ql-header[value="1"],
+.ql-header[value="2"] {
+  pointer-events: none; /* Disable clicks */
+  opacity: 0.5; /* Reduce visibility */
+  cursor: not-allowed; /* Show disabled cursor */
+}
+.tabForDesktop button p{
+  margin-left: 4%;
+}
+.reactEasyCrop_Container {
+height: 200px !important;
+margin: auto;
+}
+.MuiButton-colorPrimary.Mui-disabled{
+  color:#00000033 !important;
+}
+.publishInfo .MuiAlert-icon,.publishInfo .MuiAlert-message{
+  line-height: 1.7;
+}
+.publishInfo .MuiAlert-action{
+  padding: 0;
+}
+.ql-editor p {
+margin: 0;
+}
+.ql-toolbar{
+  border-radius: 4px 4px 0px 0px;
+}
+.ql-container{
+  border-radius: 0px 0px 4px 4px;
+}
+.verificationDisabled{
+  filter: blur(18px);
+  pointer-events: none;
+}
+.ql-container {
+  min-height: 200px;
+  color: #333;
+}
+.hodegoTabSection .MuiBadge-badge{
+  position: relative;
+  right: 10%;
+}
+.sidebar {
+  width: 15%;
+  padding: 20px;
+  padding-right: 0;
+  background-color: #f7f7f7;
+  border-right: none;
+  box-shadow: 2px 0 5px -2px #888;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+
+.main-content {
+  margin-left: 15%;
+  width: 85%;
+  padding: 20px;
+  overflow-y: auto;
+}
+.ql-editor{
+  height: 200px !important;
+}
+.ai-dialog {
+  position: absolute;
+  top: 2%; /* Adjusted for better positioning */
+  left: 3%; /* Adjusted for better positioning */
+  width: 80%; /* Flexible width */
+  max-width: 600px; /* Optional: limit maximum width */
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 1px 8px 1px rgba(0, 0, 0, 0.2);
+  padding: 16px 16px 0px 16px;
+  font-family:Bliss Regular !important;
+  z-index: 10; /* Ensure it appears above editor content */
+  overflow: hidden;
+  overflow-x: none; /* Prevent content overflow */
+}
+
+.ai-dialog-body {
+  overflow-y: auto; /* Enable vertical scrolling only */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  word-wrap: break-word; /* Break long words to fit within the container */
+  white-space: normal; /* Ensure text wraps naturally */
+  padding-right: 8px; /* Add padding for better readability */
+
+}
+
+#ai-response {
+  overflow-wrap: break-word; /* Ensure long text wraps properly */
+  word-break: break-word; /* Break words if necessary */
+  white-space: normal; /* Prevent text from sticking to one line */
+}
+
+.ai-dialog-header {
+  font-size: 12px;
+  font-weight:bold;
+  margin-bottom: -5%;
+  text-align: left;
+  margin-top:-3%;
+
+}
+
+#ai-keywords {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.ai-dialog-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top:4%;
+}
+
+.ai-dialog-footer button {
+  padding: 12px 16px;
+  font-size: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#ai-keep{
+  color: #fff;
+  background: linear-gradient( #73A870, #0C6697);
+}
+#ai-cancel {
+  background: #f5f5f5;
+  color: #d32f2f;
+  border: 1px solid #d32f2f;
+}
+
+/* #ai-cancel:hover {
+  background: #e0e0e0;
+} */
+
+#ai-generate {
+  background: linear-gradient(90deg, #0C6697, #73A870);
+  color: white;
+}
+
+
+.ai-generate:hover {
+  background: #45a045;
+}
+#ai-loading {
+  display: none;
+  margin-top: 10px;
+  text-align: center;
+}
+#ai-answer{
+  height:150px !important;
+  font-family: Bliss Regular !important;
+}
+#ai-question{
+  font-family: Bliss Regular !important;
+}
+#ai-loading .spinner {
+  border: 2px solid #f3f3f3; /* Light gray */
+  border-top: 2px solid #0c6697; /* Blue color for the spinner */
+  border-radius: 50%;
+  width: 16px; /* Small size for the spinner */
+  height: 16px; /* Small size for the spinner */
+  animation: spin 0.8s linear infinite;
+}
+
+/* Spinner animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.custom-tooltip-trigger {
+  position: relative; /* Needed for absolute positioning of tooltip */
+}
+
+.custom-tooltip-trigger::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: -40px; /* Position above the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(to right, #73A870, #0C6697);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap; /* Prevent text from wrapping */
+  z-index: 100; /* Ensure tooltip is on top */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.custom-tooltip-trigger:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+.MuiAlert-action.css-ki1hdl-MuiAlert-action.publish-button {
+  align-items: center; /* Center vertically */
+}
+@media only screen and (max-width: 768px) {
+  .ai-dialog {
+    width:98%;
+  }
+}
+/* @media (max-width: 1180px) {
+  .settingsView{
+    width: 10%;
+  }
+  .publishInfo{
+    width:400px;
+  }
+  .publishButton{
+    margin-top:6% !important;
+  }
+
+} */
+ @media screen and (max-width: 1366px) and (min-width: 1024px) {
+  .settingsView{
+    width: 10% !important;
+  }
+  .uploadPicture{
+    width:16% !important;
+  }
+  .profilePreview{
+   margin-left:1%;
+  }
+  .publishInfo{
+    width:400px;
+  }
+  .publishButton{
+    margin-top:6% !important;
+  }
+  .accountSettingsSection{
+    margin-left:8%;
+  }
+ }
+ @media screen and (max-width: 1180px) and (min-width: 820px) {
+ .previewBackToEdit{
+  right:21% !important;
+  top:1% !important;
+ }
+ .previewPublish{
+  right:8% !important;
+  top:1% !important;
+ }
+ .hodegoProfileUpload{
+  width:28% !important;
+ }
+ .publishView{
+  width:55% !important;
+  margin-top:2% !important;
+ }
+ /* .bioField { */
+  /* flex-shrink: 1 !important;  */
+  /* min-width: 100%;  */
+  /* min-height: 20px;  */
+/* } */
+
+ }
+ @media screen and (max-width: 1024px) and (min-width: 768px) {
+  .previewBackToEdit{
+   right:21% !important;
+   top:1% !important;
+  }
+  .previewPublish{
+   right:8% !important;
+   top:1% !important;
+  }
+  .hodegoProfileUpload{
+   width:28% !important;
+  }
+  .publishView{
+   width:57% !important;
+   margin-top:2% !important;
+  }
+  }
+ 

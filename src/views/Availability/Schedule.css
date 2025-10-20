@@ -1,0 +1,22 @@
+#timezone-label{
+    margin-bottom:'2% !important';
+}
+.scheduleWarning .MuiAlert-icon,.scheduleWarning .MuiAlert-message{
+    line-height: 1.7;
+}
+.scheduleWarning .MuiAlert-action{
+    padding: 0;
+}
+.sticky-save-strip {
+    position: fixed;
+    width: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+    z-index: 1000;
+  }
+  @media (max-width: 768px) {
+    .sticky-save-strip {
+        width: 95%;
+    }
+  }

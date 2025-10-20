@@ -1,0 +1,9 @@
+@media screen and (max-width: 1536px) and (max-height: 864px) {
+   
+    .icon-button {
+      padding: 2px; 
+    }
+    .grid-container {
+      gap: 2px;
+    }
+  }

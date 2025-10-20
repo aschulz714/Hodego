@@ -1,0 +1,29 @@
+.mentorBio p{
+    margin: 0;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .boxTopAdjust {
+      margin-top: -1% !important;
+      margin-bottom:5% !important;
+    }
+  
+    .boxBottomAdjust {
+      margin-top: -3% !important;
+      width:45% !important;
+    }
+    .playerStats{
+      margin-top:-3% !important;
+    }
+    .cardAction{
+      margin-top:-5.5% !important;
+    }
+  }
+  @media (max-width: 820px) {
+    .playerStats{
+      margin-top:1% !important;
+    }
+    .cardAction{
+      margin-top:-1% !important;
+    }
+  }
+ 

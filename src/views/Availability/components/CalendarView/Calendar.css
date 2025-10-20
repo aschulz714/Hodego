@@ -1,0 +1,123 @@
+.fc .fc-toolbar-title {
+  text-align: left;
+  font-size: 1.25em;
+}
+
+.fc .fc-daygrid-day.fc-day-past {
+  background-color: #f0f0f0 !important;
+  pointer-events: none;
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+  cursor: pointer;
+}
+.fc-event-time,.fc-daygrid-event-dot{
+  display:none;
+}
+.fc-event-title{
+  text-align: center;
+}
+.fc .fc-daygrid-day.fc-day-past div {
+  color: #8d8888;
+}
+
+.fc .fc-daygrid-day-number {
+  color: darkgrey;
+}
+.custom-event .fc-event-title {
+  color: #73A870 !important;
+}
+
+.future-date:hover {
+  background-color: #e0f0e0 !important;
+  border: 1px solid #73A870 !important;
+}
+
+.future-date-selected {
+  background-color: #e0f0e0 !important;
+  border: 1px solid #73A870 !important;
+}
+.fc-day-future:hover {
+  background-color: #d0e6cf;  /* Change to your desired background color */
+  border: #73A870 2px solid;      /* Change to your desired border color */
+  cursor: pointer;            /* Change cursor to pointer */
+}
+.fc-prev-button, .fc-next-button {
+  background-color: white;
+  border: 1px solid #ccc;
+  color: darkgrey;
+  margin: 0 5px;
+}
+
+.fc-prev-button:hover, .fc-next-button:hover {
+  background-color: #5e8d58 !important;
+  border-color: #5e8d58 !important;
+  color: white !important;
+}
+.fc .fc-daygrid-day-top{
+  flex-direction: column;
+}
+/* Custom styles for the date cells */
+.custom-day-cell {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 5px;
+}
+.fc-day-future:has(.specific-day-cell){
+  border-top:#73A870 3px solid ;
+}
+.date-number {
+  font-size: 1em;
+}
+@media (max-width: 768px) {
+  .fc-toolbar-title {
+    font-size: 1em;
+  }
+  
+  .fc-header-toolbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .fc-prev-button, .fc-next-button {
+    margin: 5px;
+    width: 45px;
+    height: 45px;
+  }
+  
+  .fc .fc-daygrid-day-number {
+    font-size: 0.75em;
+  }
+  
+  .fc-daygrid-day {
+    padding: 5px;
+  }
+
+  .fc-scroller {
+    overflow-x: scroll;
+  }
+  
+  .fc .fc-daygrid-day-top {
+    display: flex;
+    justify-content: center;
+  }
+
+  .fc-daygrid-event {
+    font-size: 0.75em;
+    padding: 2px 5px;
+  }
+  
+  .fc-daygrid-day-frame {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .fc-daygrid-day.fc-day-today {
+    background-color: #e0f0e0 !important;
+    border: 1px solid #73A870 !important;
+  }
+}

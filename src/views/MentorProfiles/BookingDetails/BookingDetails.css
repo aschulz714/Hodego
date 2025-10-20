@@ -1,0 +1,9 @@
+.bookingConfirmDialog{
+    padding: 24px;
+}
+
+@media (max-width: 768px) {
+    .bookingConfirmDialog{
+        padding: 12px;
+    }
+}

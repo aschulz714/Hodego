@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="canonical" href="https://hodego.com/" />
+    <link rel="shortcut icon" href="hodegoFavicon.png" />
+    <link rel="icon" href="%PUBLIC_URL%/hodegoFavicon.png" />
+
+    <!-- Preload Hero Image -->
+    <link rel="preload" href="https://media-dev.hodego.com/Hodego/hero.webp" 
+          as="image" importance="high" fetchpriority="high" type="image/webp"
+          imagesizes="100vw" imagesrcset="https://media-dev.hodego.com/Hodego/hero.webp 1920w" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Hodego connects you directly with world-class athletes and sports experts for personalized coaching, real-time advice, and in-competition support. Whether you need expert guidance, insights between matches, or remote training, Hodego provides an easy way to learn from top performers who've competed at the highest levels." />
+    <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    
+    <!-- Open Graph (OG) for Social Media -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="hodegoLogo.png" />
+    <meta property="og:title" content="Hodego | Connect with the Best in Sports" />
+    <meta property="og:description" content="athlete coaching, sports mentorship, online sports training, connect with athletes, sports experts, Hodego" />
+    <meta property="og:url" content="https://hodego.com/" />
+
+    <!-- Preconnect for Faster Font Loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://media-dev.hodego.com" crossorigin />
+
+    <!-- Optimized Google Font Loading -->
+    <!-- <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" /> -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" />
+
+    <!-- Preload Custom Font -->
+    <link rel="preload" href="%PUBLIC_URL%/fonts/Bliss.ttf" as="font" type="font/ttf" crossorigin="anonymous" />
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Hodego | Connect with the Best in Sports</title>
+
+  
+    <style>
+      @font-face {
+        font-family: "Bliss-Regular";
+        src: url('%PUBLIC_URL%/fonts/Bliss.ttf') format('truetype');
+        font-display: swap;
+      }
+    </style>
+
+<script>
+  window.addEventListener("load", () => {
+    if ('caches' in window) {
+      caches.keys().then(cacheNames => {
+        cacheNames.forEach(cacheName => {
+          caches.delete(cacheName).then(success => {
+            if (success) console.log(`Cache "${cacheName}" cleared.`);
+          });
+        });
+      }).catch(error => console.error('Error accessing cache storage:', error));
+    }
+  });
+</script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
